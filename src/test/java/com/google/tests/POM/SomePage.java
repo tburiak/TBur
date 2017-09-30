@@ -48,7 +48,6 @@ public class SomePage {
     public void verifyEditBoxLastNameIsEnabled(boolean expected){
         boolean actual = editBoxLastName.isEnabled();
         Assert.assertEquals(actual, expected, "Edit box 'Last name' isn't enabled.");
-        
     }
 
 
