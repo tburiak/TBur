@@ -18,12 +18,12 @@ public class SampleTest {
 
     @BeforeClass
     public void testSetUp() {
-        driver = new ChromeDriver();
+//        driver = new ChromeDriver();
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless");
         driver = new ChromeDriver(chromeOptions);
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        driver.manage().window().maximize();
+//        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.navigate().to(appURL);
         Page = PageFactory.initElements(driver, SomePage.class);
     }
